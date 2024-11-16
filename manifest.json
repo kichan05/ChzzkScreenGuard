@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Hide Broadcast Screen",
+  "version": "1.0",
+  "description": "Hides the broadcast screen with a toggle.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "img/novel_kaguya.jpg",
+      "48": "img/novel_kaguya.jpg",
+      "128": "img/novel_kaguya.jpg"
+    }
+  },
+  "commands": {
+    "toggle-hide": {
+      "suggested_key": {
+        "default": "Alt+V",
+        "mac": "Command+Shift+H"
+      },
+      "description": "Toggle screen hiding"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
